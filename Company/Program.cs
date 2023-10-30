@@ -20,3 +20,7 @@ Motorbike motorbike301 = new Motorbike(120, "ice blue", "motorbike301", "A", tru
 Motorbike motorbike302 = new Motorbike(130, "silver", "motorbike302", "A", false, 2, 80.2);
 Motorbike motorbike303 = new Motorbike(70, "brown", "motorbike303", "A1", true, 3, 40.2);
 Motorbike motorbike304 = new Motorbike(143, "soft pink", "motorbike304", "A", false, 2, 100);
+
+Scooter scooter400 = new Scooter(30, "gold", "scooter400", "-", true, 2, 10);
+Scooter scooter401 = new Scooter(10, "lilac", "scooter401", "-", false, 3, 0);
+Scooter scooter402 = new Scooter(24, "mint", "scooter402", "-", true, 2, 7);
