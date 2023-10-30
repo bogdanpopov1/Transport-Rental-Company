@@ -27,3 +27,11 @@ List<Transport> transports = new List<Transport>()
 {
     boat001, boat002, boat003, car100, car101, car102, car103, bike200, bike201, bike202, motorbike300, motorbike301, motorbike302, motorbike303, motorbike304, scooter400, scooter401, scooter402
 };
+
+
+Console.WriteLine("Транспортное имущество компании:\n");
+
+foreach (var transport in transports)
+{
+    transport.Print();
+}

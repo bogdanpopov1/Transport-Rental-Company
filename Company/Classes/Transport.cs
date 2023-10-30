@@ -27,6 +27,11 @@ namespace Company.Classes
             NumberOfWheels = numberofwheels;
             Motor = motor;
         }
-        public abstract void Rent();
+        public virtual void Rent(){}
+
+        public virtual void Print()
+        {
+             Console.WriteLine($"Model: {Model}, IsRented: {IsRented}, Speed: {Speed}, Colour: {Colour}, Category of rights: {CategoryOfRights}, Number of wheels: {NumberOfWheels}, Motor: {Motor}");
+        }
     }
 }

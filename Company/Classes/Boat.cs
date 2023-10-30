@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Company.Classes
 {
@@ -10,13 +11,13 @@ namespace Company.Classes
 
     class Boat : Transport
     {
-        public override int Speed { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public override string Colour { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public override string Model { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public override string CategoryOfRights { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public override bool IsRented { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public override int NumberOfWheels { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public override double Motor { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public override int Speed { get; set; }
+        public override string Colour { get; set; }
+        public override string Model { get; set; }
+        public override string CategoryOfRights { get; set; }
+        public override bool IsRented { get; set; }
+        public override int NumberOfWheels { get; set; }
+        public override double Motor { get; set; }
 
         public Boat(int speed, string colour, string model, string categoryofrights, bool isrented, int numberofwheels, double motor) : base(speed, colour, model, categoryofrights, isrented, numberofwheels, motor)
         {
@@ -26,5 +27,7 @@ namespace Company.Classes
         {
             IsRented = true; 
         }
+
+        
     }
 }
