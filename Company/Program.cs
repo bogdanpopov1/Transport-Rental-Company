@@ -31,10 +31,35 @@ List<Transport> transports = new List<Transport>()
 
 transports.Sort((s1, s2) => s1.GetType().Name.CompareTo(s2.GetType().Name));
 
-Console.WriteLine("Транспортное имущество компании:\n");
+Console.WriteLine("Company transport property:\n");
 
 foreach (var transport in transports)
 {
     transport.Print();
 }
 
+bool program = true;
+
+while (program == true) {
+    Console.WriteLine("\nWhat do you want to do: find a model or exit?");
+    string action = Console.ReadLine();
+
+    if (action == "find a model") { 
+        Console.WriteLine("\nEnter model name:");
+        string model = Console.ReadLine();
+
+        var matchingTransport = transports.FindAll(p => p.Model.Equals(model, StringComparison.OrdinalIgnoreCase));
+
+        foreach (var transport in matchingTransport)
+        {
+            Console.WriteLine($"Model {transport.Model} {(transport.IsRented ? "is ranted" : "is not ranted")}");
+        }
+    } else if (action == "exit")
+    {
+        program = false;
+    } else
+    {
+        Console.WriteLine("\nERROR! Enter one of the commands: find a model or exit!");
+        action = Console.ReadLine();
+    }
+}

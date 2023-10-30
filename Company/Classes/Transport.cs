@@ -31,7 +31,7 @@ namespace Company.Classes
 
         public virtual void Print()
         {
-             Console.WriteLine($"Model: {Model}, IsRented: {IsRented}, Speed: {Speed}, Colour: {Colour}, Category of rights: {CategoryOfRights}, Number of wheels: {NumberOfWheels}, Motor: {Motor}");
+             Console.WriteLine($"Model: {Model}, Is rented: {IsRented}, Speed: {Speed}, Colour: {Colour}, Category of rights: {CategoryOfRights}, Number of wheels: {NumberOfWheels}, Motor: {Motor}");
         }
     }
 }
