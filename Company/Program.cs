@@ -25,9 +25,11 @@ Scooter scooter402 = new Scooter(24, "mint", "scooter402", "-", true, 2, 7);
 
 List<Transport> transports = new List<Transport>()
 {
-    boat001, boat002, boat003, car100, car101, car102, car103, bike200, bike201, bike202, motorbike300, motorbike301, motorbike302, motorbike303, motorbike304, scooter400, scooter401, scooter402
+    boat001, motorbike302, motorbike303, boat002, boat003, car100, car101, scooter400, scooter401, car102, car103, bike200, bike202, motorbike300, motorbike301, motorbike304, bike201, scooter402
 };
 
+
+transports.Sort((s1, s2) => s1.GetType().Name.CompareTo(s2.GetType().Name));
 
 Console.WriteLine("Транспортное имущество компании:\n");
 
@@ -35,3 +37,4 @@ foreach (var transport in transports)
 {
     transport.Print();
 }
+
