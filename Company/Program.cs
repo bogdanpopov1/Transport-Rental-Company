@@ -1,7 +1,5 @@
 ﻿using Company.Classes;
 
-List<Transport> transports = new List<Transport>();
-
 Boat boat001 = new Boat(40, "gray", "boat001", "B", false, 0, 70);
 Boat boat002 = new Boat(80, "green", "boat002", "B", false, 0, 90);
 Boat boat003 = new Boat(15, "blue", "boat003", "A", true, 0, 7);
@@ -24,3 +22,8 @@ Motorbike motorbike304 = new Motorbike(143, "soft pink", "motorbike304", "A", fa
 Scooter scooter400 = new Scooter(30, "gold", "scooter400", "-", true, 2, 10);
 Scooter scooter401 = new Scooter(10, "lilac", "scooter401", "-", false, 3, 0);
 Scooter scooter402 = new Scooter(24, "mint", "scooter402", "-", true, 2, 7);
+
+List<Transport> transports = new List<Transport>()
+{
+    boat001, boat002, boat003, car100, car101, car102, car103, bike200, bike201, bike202, motorbike300, motorbike301, motorbike302, motorbike303, motorbike304, scooter400, scooter401, scooter402
+};
