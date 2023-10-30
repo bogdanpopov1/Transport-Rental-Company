@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Company.Classes
 {
-    internal class Motobike : Transport
+    internal class Motorbike : Transport
     {
         public override int Speed { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public override string Colour { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
@@ -16,7 +16,7 @@ namespace Company.Classes
         public override int NumberOfWheels { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public override double Motor { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
-        public Motobike(int speed, string colour, string model, string categoryofrights, bool isrented, int numberofwheels, double motor) : base(speed, colour, model, categoryofrights, isrented, numberofwheels, motor)
+        public Motorbike(int speed, string colour, string model, string categoryofrights, bool isrented, int numberofwheels, double motor) : base(speed, colour, model, categoryofrights, isrented, numberofwheels, motor)
         {
         }
 
